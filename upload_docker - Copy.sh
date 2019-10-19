@@ -11,12 +11,11 @@ dockerpath=ml_project
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-sudo docker tag $dockerpath:latest ayaserry/$dockerpath:latest
-# sudo docker tag ml_project:latest ayaserry/ml_project:latest
+sudo $(aws ecr get-login --no-include-email --region us-west-2)
+sudo docker tag $dockerpath:latest 570465604558.dkr.ecr.us-west-2.amazonaws.com/$dockerpath:latest
 
 
 
 # Step 3:
 # Push image to a docker repository
-sudo docker push ayaserry/$dockerpath:latest
-# sudo docker push ayaserry/ml_project:latest
+sudo docker push 570465604558.dkr.ecr.us-west-2.amazonaws.com/$dockerpath:latest
