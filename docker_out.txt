@@ -1,10 +1,6 @@
-156.204.255.200 - - [19/Oct/2019 00:05:21] "GET / HTTP/1.1" 200 -
-[2019-10-19 00:05:51,903] INFO in app: JSON payload:
-{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2019-10-19 00:05:52,080] INFO in app: Inference payload DataFrame:
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
+[2019-10-22 22:19:21,419] INFO in app: JSON payload: {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2019-10-22 22:19:21,431] INFO in app: Inference payload DataFrame:    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2019-10-19 00:05:52,092] INFO in app: Scaling Payload:
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
+[2019-10-22 22:19:21,442] INFO in app: Scaling Payload:    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-172.17.0.1 - - [19/Oct/2019 00:05:52] "POST /predict HTTP/1.1" 500 -
+172.17.0.1 - - [22/Oct/2019 22:19:21] "POST /predict HTTP/1.1" 500 -
