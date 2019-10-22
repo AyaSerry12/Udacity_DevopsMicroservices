@@ -17,6 +17,6 @@ sudo kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-sudo kubectl expose pod appx-c8897dc55-9hx7b --type=NodePort --port=8000 --target-port=80
+sudo kubectl expose pod appx-c8897dc55-rqbz5 --type=NodePort --port=8000 --target-port=80
 # sudo kubectl port-forward deployment/appx 8000:80
 31452
